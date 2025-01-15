@@ -18,6 +18,13 @@ body{ /* CORES */
 	--cream: #FFF5D3;
 }
 
+body{
+	background: rgb(255,214,0);
+	background: linear-gradient(324deg, rgba(255,214,0,1) 0%, rgba(251,169,0,1) 25%, rgba(255,214,0,1) 50%, rgba(251,169,0,1) 75%, rgba(255,214,0,1) 100%);	
+}
+
+/* ===================================  ================================================ */
+
 header{
 	width: 100%;
 	height: 70px;
@@ -45,17 +52,14 @@ header a{
 	font-variant: small-caps;
 }
 
-/* header a:hover{
-    font-size: 29px;
-    color: #feefdd;
-} */
-
-/* HEADER END */
+/* =================================== HEADER END ================================================ */
 
 menu{
 	width: 100%;
 	height: 100vh;
-	background-color: #FBA900;
+	/* background-color: #FBA900; */
+	/* background: rgb(251,169,0);
+background: linear-gradient(346deg, rgba(251,169,0,1) 28%, rgba(255,214,0,1) 100%); */
 }
 
 .menu-area{
@@ -85,27 +89,91 @@ menu{
 	background-color: yellow; */
 }
 
-/* MENU END */
+/* =================================== MENU END ================================================ */
 
-#section1{
+#cookies{
 	width: 100%;
 	height: 100vh;
-	background: rgb(255,245,211);
-	background: linear-gradient(0deg, rgba(255,245,211,1) 0%, #fba900 100%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* background-color: #FFD600; */
 }
 
-#section2{
-	width: 100%;
-	height: 100vh;
-	background-color: var(--cream)
+.cookiesArea{
+	width: 90%;
+	height: 80%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 8%;
+	/* background-color: red; */
 }
 
-#section3{
+.cookie1{
+	width: 25%;
+	height: 90%;
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.cookie1 img{
+	width: 95%;
+}
+
+.cookie2{
+	width: 25%;
+	height: 90%;
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.cookie2 img{
+	width: 95%;
+}
+
+.cookie3{
+	width: 25%;
+	height: 90%;
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.cookie3 img{
+	width: 95%;
+}
+
+
+/* =================================== COOKIES END ================================================ */
+
+#sobre{
 	width: 100%;
 	height: 100vh;
-	background: rgb(255,214,0);
-	background: linear-gradient(0deg, rgba(255,214,0,1) 0%, rgba(255,245,211,1) 100%);
+	/* background-color: #E87F00; */
 }
+
+/* =================================== SOBRE END ================================================ */
+
+#contactos{
+	width: 100%;
+	height: 100vh;
+	/* background-color: #FBA900; */
+}
+
+/* =================================== CONTACTOS END ================================================ */
 
 .footer-main{
     width: 100%;
