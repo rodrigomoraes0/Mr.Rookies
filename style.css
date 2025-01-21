@@ -18,11 +18,6 @@ body{ /* CORES */
 	--cream: #FFF5D3;
 }
 
-body{
-	background: rgb(255,214,0);
-	background: linear-gradient(324deg, rgba(255,214,0,1) 0%, rgba(251,169,0,1) 25%, rgba(255,214,0,1) 50%, rgba(251,169,0,1) 75%, rgba(255,214,0,1) 100%);	
-}
-
 /* ===================================  ================================================ */
 
 header{
@@ -33,7 +28,6 @@ header{
 	align-items: center;
 	justify-content: center;
 	position: fixed;
-	display: hidden;
 }
 
 header ul{
@@ -58,8 +52,8 @@ menu{
 	width: 100%;
 	height: 100vh;
 	/* background-color: #FBA900; */
-	/* background: rgb(251,169,0);
-background: linear-gradient(346deg, rgba(251,169,0,1) 28%, rgba(255,214,0,1) 100%); */
+	background: rgb(251,169,0);
+background: linear-gradient(346deg, rgba(251,169,0,1) 28%, rgba(255,214,0,1) 100%);
 }
 
 .menu-area{
@@ -98,6 +92,8 @@ background: linear-gradient(346deg, rgba(251,169,0,1) 28%, rgba(255,214,0,1) 100
 	justify-content: center;
 	align-items: center;
 	/* background-color: #FFD600; */
+	background: rgb(232,127,0);
+background: linear-gradient(324deg, rgba(232,127,0,1) 0%, rgba(251,169,0,1) 30%);
 }
 
 .cookiesArea{
@@ -111,10 +107,10 @@ background: linear-gradient(346deg, rgba(251,169,0,1) 28%, rgba(255,214,0,1) 100
 	/* background-color: red; */
 }
 
-.cookie1{
+.cookie1, .cookie2, .cookie3{
 	width: 25%;
 	height: 90%;
-	background-color: rgba(0, 0, 0, 0.1);
+	background-color: rgba(100, 100, 100, 0.1);
 	border-radius: 20px;
 	display: flex;
 	flex-direction: column;
@@ -123,37 +119,25 @@ background: linear-gradient(346deg, rgba(251,169,0,1) 28%, rgba(255,214,0,1) 100
 }
 
 .cookie1 img{
-	width: 95%;
-}
-
-.cookie2{
-	width: 25%;
-	height: 90%;
-	background-color: rgba(0, 0, 0, 0.1);
-	border-radius: 20px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	width: 100%;
 }
 
 .cookie2 img{
-	width: 95%;
+	width: 90%;
 }
 
-.cookie3{
-	width: 25%;
-	height: 90%;
-	background-color: rgba(0, 0, 0, 0.1);
-	border-radius: 20px;
+.cookie3 img{
+	width: 90%;
+}
+
+.cookieText{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-}
-
-.cookie3 img{
-	width: 95%;
+	text-align: center;
+	color: var(--cream);
+	font-weight: 550;
 }
 
 
@@ -163,6 +147,8 @@ background: linear-gradient(346deg, rgba(251,169,0,1) 28%, rgba(255,214,0,1) 100
 	width: 100%;
 	height: 100vh;
 	/* background-color: #E87F00; */
+	background: rgb(255,214,0);
+background: linear-gradient(193deg, rgba(255,214,0,1) 0%, rgba(255,184,0,1) 50%, rgba(255,214,0,1) 100%);
 }
 
 /* =================================== SOBRE END ================================================ */
@@ -171,19 +157,21 @@ background: linear-gradient(346deg, rgba(251,169,0,1) 28%, rgba(255,214,0,1) 100
 	width: 100%;
 	height: 100vh;
 	/* background-color: #FBA900; */
+	background: rgb(79,47,0);
+background: linear-gradient(297deg, rgba(79,47,0,1) 0%, rgba(128,74,0,1) 32%, rgba(79,47,0,1) 88%);	
 }
 
 /* =================================== CONTACTOS END ================================================ */
 
 .footer-main{
-    width: 100%;
+	width: 100%;
     height: 70px;
     display: flex;
     background-color: #000000
 }
 
 .footer-content{
-    font-family: sans-serif;
+	font-family: sans-serif;
     font-weight: lighter;
     display: flex;
     align-items: center;
@@ -197,7 +185,67 @@ background: linear-gradient(346deg, rgba(251,169,0,1) 28%, rgba(255,214,0,1) 100
 }
 
 .footer-content span a{
-    text-decoration: none;
+	text-decoration: none;
     color: #3c3c3c;
     transition: 0.5s;
+}
+
+/* =================================== MEDIA QUERRY ================================================ */
+
+@media (max-width: 500px){
+
+	header ul{
+		gap: 15px;
+		font-weight: 500;
+	}
+
+	.menu-area{
+		flex-direction: column;
+		padding-top: 0;
+	}
+
+	.menu-area h1{
+		width: 80%;
+		font-size: 12vw;
+	}
+
+	.menu-area img{
+		width: 70%;
+	}
+
+	.cookiesArea{
+		flex-direction: column;
+		width: 90%;
+		height: 80%;
+	}
+
+	.cookie1, .cookie3{
+		width: 100%;
+		height: 28%;
+		align-items: center;
+		justify-content: center;
+		flex-direction: row;
+		gap: 5vw;
+	}
+
+	.cookie2{
+		width: 100%;
+		height: 28%;
+		align-items: center;
+		justify-content: center;
+		flex-direction: row-reverse;
+		gap: 5vw;
+	}
+
+	.cookie1 img{
+		width: 60%;
+	}
+	
+	.cookie2 img{
+		width:60%;
+	}
+	
+	.cookie3 img{
+		width:60%;
+	}
 }
