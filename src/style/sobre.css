@@ -1,0 +1,80 @@
+@font-face {
+	font-family: 'The Big Joe';
+	src: url("../../docs/The Big Joe.ttf") format('truetype');
+  }
+
+@font-face{
+	font-family: 'Nexa-ExtraLight';
+	src: url("../../docs/Nexa-ExtraLight.ttf") format('truetype');
+} 
+
+@font-face{
+	font-family: 'Nexa-Heavy';
+	src: url("../../docs/Nexa-Heavy.ttf") format('truetype');
+}
+
+/*================================================================================*/
+
+#sobre{
+	width: 100%;
+	height: 100vh;
+	background: rgb(255,214,0);
+	background: linear-gradient(193deg, rgba(255,214,0,1) 0%, rgba(255,184,0,1) 50%, rgba(255,214,0,1) 100%);
+	display: flex;
+	flex-direction: row;
+	padding: 70px 20px 0px 20px
+}
+
+.cookieBox{
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.cookieBox img{
+	height: 80%;
+}
+
+.sobreBox{
+	width: 50%;
+	padding: 0 1.7vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.sobreBox p{
+	text-align: center;
+	font-size: 1.5rem;
+	font-family: 'Nexa-Heavy', sans-serif;
+	color: var(--lightbrown);
+}
+
+.sobreBox img{
+	width: 100%;
+}
+
+/* =================================== MEDIA QUERRY ================================================ */
+
+@media (max-width: 1170px){
+	#sobre{
+		flex-direction: column-reverse;
+	}
+	
+	.cookieBox{
+		width: 100%;
+		height: 50%;
+	}
+	
+	.sobreBox{
+		width: 100%;
+		gap: 30px;
+	}
+	
+	.sobreBox p{
+		font-size: 1.1rem;
+	}
+}

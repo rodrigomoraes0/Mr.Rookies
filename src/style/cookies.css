@@ -1,0 +1,120 @@
+@font-face {
+	font-family: 'The Big Joe';
+	src: url("../../docs/The Big Joe.ttf") format('truetype');
+  }
+
+@font-face{
+	font-family: 'Nexa-ExtraLight';
+	src: url("../../docs/Nexa-ExtraLight.ttf") format('truetype');
+} 
+
+@font-face{
+	font-family: 'Nexa-Heavy';
+	src: url("../../docs/Nexa-Heavy.ttf") format('truetype');
+}
+
+/*================================================================================*/
+
+
+#cookies{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* background-color: #FFD600; */
+	background: rgb(232,127,0);
+	background: linear-gradient(324deg, rgba(232,127,0,1) 0%, rgba(251,169,0,1) 30%);
+}
+
+.cookiesArea{
+	width: 90%;
+	height: 80%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 8%;
+	/* background-color: red; */
+}
+
+.cookie1, .cookie2, .cookie3{
+	width: 25%;
+	height: 90%;
+	background-color: rgba(100, 100, 100, 0.05);
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.cookie1 img{
+	width: 100%;
+}
+
+.cookie2 img{
+	width: 90%;
+}
+
+.cookie3 img{
+	width: 90%;
+}
+
+.cookieText{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: var(--lightbrown);
+	font-weight: 550;
+}
+
+.cookieText h2{
+	font-family: 'Nexa-Heavy';
+}
+
+.cookieText p{
+	font-family: 'Nexa-ExtraLight';
+}
+
+/* =================================== MEDIA QUERRY ================================================ */
+
+@media (max-width: 1170px){
+	.cookiesArea{
+		flex-direction: column;
+		width: 90%;
+		height: 80%;
+	}
+	
+	.cookie1, .cookie3{
+		width: 100%;
+		height: 28%;
+		align-items: center;
+		justify-content: center;
+		flex-direction: row;
+		gap: 5vw;
+	}
+	
+	.cookie2{
+		width: 100%;
+		height: 28%;
+		align-items: center;
+		justify-content: center;
+		flex-direction: row-reverse;
+		gap: 5vw;
+	}
+	
+	.cookie1 img{
+		width: 60%;
+	}
+	
+	.cookie2 img{
+		width:60%;
+	}
+	
+	.cookie3 img{
+		width:60%;
+	}
+}

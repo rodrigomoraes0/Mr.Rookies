@@ -3,35 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/style/style.css">
+    <link rel="stylesheet" href="src/style/sobre.css">
+    <link rel="stylesheet" href="src/style/menu.css">
+    <link rel="stylesheet" href="src/style/header.css">
+    <link rel="stylesheet" href="src/style/cookies.css">
+    <link rel="stylesheet" href="src/style/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Mr.Rookies</title>
 </head>
 <body>
     <header>
-        <img src="" alt="">
-        <ul>
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#cookies">COOKIES</a></li>
-            <li><a href="#sobre">SOBRE</a></li>
-            <li><a href="#contactos">CONTACTOS</a></li>
-        </ul>
+        <nav id="navbar">
+            <img src="img/logoCreme.png" alt="">
+            <ul id="nav_list">
+                <li id="nav_item"><a href="#home">HOME</a></li>
+                <li id="nav_item"><a href="#cookies">COOKIES</a></li>
+                <li id="nav_item"><a href="#sobre">SOBRE</a></li>
+                <li id="nav_item"><a href="#menu">CONTACTOS</a></li>
+            </ul>
+
+            <button class="btn-default btn-header">
+                Peça Aqui
+            </button>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+        
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li id="nav_item"><a href="#home">HOME</a></li>
+                <li id="nav_item"><a href="#cookies">COOKIES</a></li>
+                <li id="nav_item"><a href="#sobre">SOBRE</a></li>
+                <li id="nav_item"><a href="#menu">CONTACTOS</a></li>
+            </ul>
+    
+            <button class="btn-default">
+                Peça Aqui
+            </button>
+
+            <img src="img/logoCreme.png" alt="">
+        </div>
     </header>
 
     <!-- HEADER END -->
 
-    <menu id="home">
-        <div class="menu-area">
-            <h1>O COOKIE <br> VOCÊ DÁ,<br>O COOKIE <br> VOCÊ COME.</h1>
+    <section id=home>
+        <div class="home-cta">
+            <h1>Sabor que <span>derrete</span> na boca e deixa você querendo <span>MAIS...</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum repellat accusamus in fugiat harum ipsa optio ratione ducimus adipisci!</p>
+            <div id="cta_buttons">
+                <a href="#" class="btn-default"><i class="fa-solid fa-cookie-bite"> Ver Menu</i></a>
+                <a href="tel:+555555555" id="phone_button">
+                    <button class="btn-default"></button>
+                </a>
+            </div>
+        </div>
+
+        <div class="home-img">
             <img src="img/cookieimg.png" alt="">
         </div>
-    </menu>
+    </section>
 
     <!-- MENU END -->
 
     <section id="cookies">
         <div class="cookiesArea">
             <div class="cookie1">
-                <img src="img/classico.png" alt="">
+                <!-- <img src="img/classico.png" alt=""> -->
                 <div class="cookieText">
                     <h2>Clássico</h2>
                     <p>Comentário</p>
@@ -39,7 +82,7 @@
                 
             </div>
             <div class="cookie2">
-                <img src="img/redvelvet.png" alt="">
+                <<!-- img src="img/redvelvet.png" alt=""> -->
                 <div class="cookieText">
                     <h2>Red Velvet</h2>
                     <p>Comentário</p>
@@ -47,7 +90,7 @@
                 
             </div>
             <div class="cookie3">
-                <img src="img/pistache.png" alt="">
+                <!-- <img src="img/pistache.png" alt=""> -->
                 <div class="cookieText">
                     <h2>Pistache</h2>
                     <p>Comentário</p>
@@ -64,10 +107,7 @@
             <img src="img/caixaCookies2.png" alt="">
         </div>
         <div class="sobreBox">
-            <div class="sobreTitulo">
-                <h2>Sobre a</h2>
-                <img src="img/logoMarrom.png" alt="">
-            </div>
+            <img src="img/sobre.png" alt="">
             <p>Fazer cookies é a nossa paixão, mas o que sai da nossa fábrica 
                 não é apenas um produto. É um momento único de magia que 
                 convida ao extraordinário. <br>
@@ -80,8 +120,10 @@
 
     <!-- SECTION 2 END -->
      
-    <section id="contactos">
-
+    <section id="menu">
+        <div class="menuBox">
+            <img src="./img/menu.jpg" alt="">
+        </div>
     </section>
 
     <!-- SECTION 3 END -->
@@ -95,6 +137,6 @@
 <!-- FOOTER END -->
 
 <!------------------------------------------------------------------------------------------------>
-    <script src="script.js" defer></script>
+    <script src="src/script/script.js" defer></script>
 </body>
 </html>

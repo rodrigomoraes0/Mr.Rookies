@@ -162,7 +162,7 @@ menu{
 }
 
 .cookieText p{
-	Nexa-ExtraLight
+	font-family: 'Nexa-ExtraLight';
 }
 
 
@@ -229,7 +229,7 @@ menu{
 
 /* =================================== SOBRE END ================================================ */
 
-#contactos{
+#menu{
 	width: 100%;
 	height: 100vh;
 	/* background-color: #FBA900; */
@@ -268,7 +268,7 @@ background: linear-gradient(297deg, rgba(79,47,0,1) 0%, rgba(128,74,0,1) 32%, rg
 
 /* =================================== MEDIA QUERRY ================================================ */
 
-@media (max-width: 500px){
+@media (max-width: 1170px){
 
 	header ul{
 		gap: 15px;

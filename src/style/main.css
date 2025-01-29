@@ -1,0 +1,70 @@
+@font-face {
+	font-family: 'The Big Joe';
+	src: url("../../docs/The Big Joe.ttf") format('truetype');
+  }
+
+@font-face{
+	font-family: 'Nexa-ExtraLight';
+	src: url("../../docs/Nexa-ExtraLight.ttf") format('truetype');
+} 
+
+@font-face{
+	font-family: 'Nexa-Heavy';
+	src: url("../../docs/Nexa-Heavy.ttf") format('truetype');
+}
+
+/*================================================================================*/
+
+
+#home{
+	width: 100%;
+	height: 100vh;
+	padding: 70px 20px 0px 20px;
+	display: flex;
+	flex-direction: row;
+	background: rgb(251,169,0);
+	background: linear-gradient(346deg, rgba(251,169,0,1) 28%, rgba(255,214,0,1) 100%);
+}
+
+.home-cta{
+	width: 50%;
+}
+
+.home-cta h1{
+	font-family: 'Nexa-Heavy', sans-serif;
+	font-variant: small-caps;
+	color: var(--darkbrown);
+}
+
+.home-cta span{
+	color: #972D07;
+}
+
+.home-img{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.home-img img{
+	width: 80%;
+}
+
+/* =================================== MEDIA QUERRY ================================================ */
+
+@media (max-width: 1170px){
+	.menu-area{
+		flex-direction: column;
+		padding-top: 0;
+	}
+
+	.menu-area h1{
+		width: 80%;
+		font-size: 12vw;
+	}
+
+	.menu-area img{
+		width: 70%;
+	}
+}
