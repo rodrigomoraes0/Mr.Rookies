@@ -18,14 +18,12 @@
 
 header{
 	width: 100%;
-	height: 70px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	margin: 30px auto;
 	position: fixed;
 }
 
 #navbar{
+	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -38,15 +36,18 @@ header{
     list-style: none;
 }
 
-#navitem a{
+.nav-item a{
     text-decoration: none;
     color: var(--cream);
-    font-size: 20px;
+    font-size: 1.2rem;
     cursor: pointer;
+	font-variant: small-caps;
+	font-family: 'Nexa-ExtraLight', sans-serif;
+	font-weight: 600;
 }
 
 #navbar img{
-	height: 50%;
+	height: 30px;
 	position: absolute;
 	left: 20px;
 }
@@ -72,7 +73,8 @@ header{
 		font-weight: 500;
 	}
 
-	#nav_list, #navbar .btn-default, #navbar img{
+	.nav-item,
+	#navbar .btn-header{
 		display: none;
 	}
 
@@ -91,17 +93,27 @@ header{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		justify-content: center;
+		margin-top: -30px;
+		height: 100vh;
+		background-color: var(--orange2);
 	}
 
-	#mobile_nav_list{
+	.mobile_nav_list{
 		display: flex;
 		flex-direction: column;
 		gap: 12px;
 		margin: 12px 0px;
-		display: none;
+		list-style: none;
 	}
 
-	#mobile_menu img{
-		height: 40px;
+	.mobile_nav_item a{
+		text-decoration: none;
+		color: var(--cream);
+		font-size: 1.2rem;
+		cursor: pointer;
+		font-variant: small-caps;
+		font-family: 'Nexa-ExtraLight', sans-serif;
+		font-weight: 600;
 	}
 }
