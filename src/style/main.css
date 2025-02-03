@@ -19,9 +19,7 @@
 #home{
 	width: 100%;
 	height: 100vh;
-	padding: 70px 20px 0px 20px;
 	display: flex;
-	flex-direction: row;
 	background: rgb(251,169,0);
 	background: linear-gradient(346deg, rgba(251,169,0,1) 28%, rgba(255,214,0,1) 100%);
 }
@@ -35,11 +33,15 @@
 }
 
 .home-cta h1{
+	width: 80%;
+	padding-bottom: 20px;
 	font-family: 'Nexa-Heavy', sans-serif;
 	font-variant: small-caps;
 	color: var(--darkbrown);
 	font-size: 4rem;
-	text-align: center;
+	text-align: justify;
+	text-align-last: center;
+	/* background-color: red; */
 }
 
 .home-cta span{
@@ -49,6 +51,7 @@
 #cta_buttons{
 	display: flex;
 	gap: 10px;
+	padding-bottom: 20px;
 }
 
 .home-img{
@@ -64,6 +67,30 @@
 
 .btn-menu{
 	width: fit-content;
+	font-family: 'Nexa-ExtraLight';
+}
+
+#phone_button{
+	text-decoration: none;
+	font-weight: bolder;
+}
+
+.social-media-buttons{
+	display: flex;
+	gap: 18px;
+}
+
+.social-media-buttons a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 45px;
+	height: 40px;
+	font-size: 1.5rem;
+	border-radius: 10px;
+	text-decoration: none;
+	color: var(--cream);
+	box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* =================================== MEDIA QUERRY ================================================ */
@@ -71,12 +98,12 @@
 @media (max-width: 1170px){
 	#home{
 		flex-direction: column;
-		padding-top: 50px;
 	}
 
 	.home-cta{
 		width: 100%;
 		height: 50%;
+		padding-top: 40px;
 	}
 
 	.home-cta h1{
