@@ -20,64 +20,98 @@
 	width: 100%;
 	height: 100vh;
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	/* background-color: #FFD600; */
-	background: rgb(232,127,0);
-	background: linear-gradient(324deg, rgba(232,127,0,1) 0%, rgba(251,169,0,1) 30%);
-}
-
-.cookiesArea{
-	width: 90%;
-	height: 80%;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	gap: 8%;
-	/* background-color: red; */
-}
-
-.cookie1, .cookie2, .cookie3{
-	width: 25%;
-	height: 90%;
-	background-color: rgba(100, 100, 100, 0.05);
-	border-radius: 20px;
-	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	background-color: var(--orange2);
 }
 
-.cookie1 img{
+.cookies-title{
 	width: 100%;
-}
-
-.cookie2 img{
-	width: 90%;
-}
-
-.cookie3 img{
-	width: 90%;
-}
-
-.cookieText{
+	height: 15%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	text-align: center;
+	background-color: var(--orange2);
+}
+
+.cookies-title h1{
+	font-family: 'Nexa-Heavy', sans-serif;
+	font-variant: small-caps;
+	font-size: 2rem;
+	color: #972D07;
+}
+
+.cookies-title p{
+	font-family: 'Nexa-ExtraLight', sans-serif;
+	font-weight: bold;
+	font-variant: small-caps;
+	font-size: 1.5rem;
 	color: var(--lightbrown);
-	font-weight: 550;
 }
 
-.cookieText h2{
-	font-family: 'Nexa-Heavy';
+/*================================================================================*/
+
+.cookies-big-area{
+	width: 100%;
+	height: 85%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 40px;
 }
 
-.cookieText p{
-	font-family: 'Nexa-ExtraLight';
+.cookies-area{
+	width: 300px;
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 10px;
 }
+
+.cookie1{
+	background-color: var(--orange1);
+}
+
+.cookie2{
+	background-color: var(--cream);
+}
+
+.cookie3{
+	background-color: var(--orange3);
+}
+
+.cookie4{
+	background-color: var(--lightbrown);
+}
+/*================================================================================*/
+.cookie-img{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	top: 50px;
+}
+
+.cookie-img img{
+	width: 85%;
+}
+
+.cookie2 .cookie-img img{
+	width: 80%;
+	height: 92%;
+}
+
+/*================================================================================*/
+
+.cookie-name{
+	position: relative;
+	top: 120px;
+}
+
 
 /* =================================== MEDIA QUERRY ================================================ */
 
