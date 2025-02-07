@@ -17,7 +17,7 @@
 
 
 #cookies{
-	width: 100%;
+	width: 100vw;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -68,7 +68,10 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	border-radius: 10px;
+	gap: 30px;
+	padding: 20px;
 }
 
 .cookie1{
@@ -92,8 +95,6 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	position: relative;
-	top: 50px;
 }
 
 .cookie-img img{
@@ -108,47 +109,32 @@
 /*================================================================================*/
 
 .cookie-name{
-	position: relative;
-	top: 120px;
+	width: 100%;
+}
+
+.cookie-name h2{
+	text-align: left;
+	font-family: 'Nexa-Heavy';
+	color: #972D07;
+}
+
+/*================================================================================*/
+
+.cookie-desc{
+	width: 100%;
+}
+
+.cookie-desc p{
+	font-family: 'Nexa-ExtraLight';
+	color: #1d1d1d;
 }
 
 
 /* =================================== MEDIA QUERRY ================================================ */
 
-@media (max-width: 1170px){
-	.cookiesArea{
-		flex-direction: column;
-		width: 90%;
-		height: 80%;
-	}
-	
-	.cookie1, .cookie3{
-		width: 100%;
-		height: 28%;
-		align-items: center;
-		justify-content: center;
-		flex-direction: row;
-		gap: 5vw;
-	}
-	
-	.cookie2{
-		width: 100%;
-		height: 28%;
-		align-items: center;
-		justify-content: center;
-		flex-direction: row-reverse;
-		gap: 5vw;
-	}
-	
-	.cookie1 img{
-		width: 60%;
-	}
-	
-	.cookie2 img{
-		width:60%;
-	}
-	
-	.cookie3 img{
-		width:60%;
+@media all and (max-width: 1170px){
+	.cookies-big-area{
+		overflow: auto;
+		gap: 20px;
 	}
 }
