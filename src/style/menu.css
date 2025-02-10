@@ -19,7 +19,7 @@
 
 #menu{
 	width: 100%;
-	height: 100vh;
+	height: 900px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -27,20 +27,84 @@
 	background: linear-gradient(297deg, rgba(79,47,0,1) 0%, rgba(128,74,0,1) 32%, rgba(79,47,0,1) 88%);	
 }
 
-.menuBox{
-	width: 100%;
+/*================================================================================*/
+
+.menu-default{
+	width: 33.3%;
 	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	padding: 65px 40px;
 }
 
-.menuBox img{
-	width: 200px;
+.menu-default h2{
+	font-family: 'Nexa-Heavy';
+	font-size: 1.5rem;
+	width: 100%;
+	text-align: left;
+	margin-bottom: 25px;
+}
+
+.menu-default h3{
+	font-family: 'Nexa-Heavy';
+	font-size: 1.2rem;
+	width: 100%;
+	text-align: left;
+}
+
+.menu-default p{
+	font-family: 'Nexa-ExtraLight';
+	font-weight: bold;
+	font-size: 1.1rem;
+	width: 100%;
+	text-align: left;
+	margin-bottom: 15px;
+}
+
+/*================================================================================*/
+
+.menu1{
+	background-color: var(--orange3);
+}
+
+.menu1 img{
+	width: 90%;
+	padding: 40px 0;
+}
+
+.menu1 h2, .menu1 h3, .menu1 p{
+	color: var(--darkbrown);
+}
+
+/*================================================================================*/
+
+.menu2{
+	background-color: var(--lightbrown);
+}
+
+.menu2 h2, .menu2 h3, .menu2 p{
+	color: var(--cream);
+}
+
+.menu2 img{
+	overflow: hidden;
+	width: 95%;
+	position: relative;
+	right: 70px;
+}
+
+/*================================================================================*/
+
+.menu3{
+	background-color: var(--cream);
+}
+
+.menu3 h2, .menu3 h3, .menu3 p{
+	color: var(--lightbrown);
 }
 
 /* =================================== MEDIA QUERRY ================================================ */
 
 @media (max-width: 1170px){
-	
+	#menu{
+		display: hidden;
+	}
 }
