@@ -19,7 +19,7 @@
 
 #menu{
 	overflow: hidden;
-	width: 100%;
+	width: 100vw;
 	height: 900px;
 	display: flex;
 	justify-content: center;
@@ -28,12 +28,20 @@
 	background: linear-gradient(297deg, rgba(79,47,0,1) 0%, rgba(128,74,0,1) 32%, rgba(79,47,0,1) 88%);
 }
 
+.menu-big-area{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	overflow: auto;
+}
+
 /*================================================================================*/
 
 .menu-default{
 	width: 33.3%;
 	height: 100%;
 	padding: 65px 40px;
+	overflow: hidden;
 }
 
 .menu-default h2{
@@ -96,29 +104,26 @@
 
 .menu3{
 	background-color: var(--cream);
+	background-image: url(../../img/Chocolate-1-trans.png);
+	background-size: cover;
 }
 
 .menu3 h2, .menu3 h3, .menu3 p{
 	color: var(--lightbrown);
 }
 
-.menu3 .barra-chocolate{
-	height: 800px;
-	opacity: 5%;
-	z-index: 1;
-	position: absolute;
+.menu3 .cookie5{
+	display: none;
 }
 
-.menu3 .cookie5{
-	width: 80%;
-	position: relative;
-	top: -150px;
-	right: -200px;
-	z-index: 2;
+.menu3 .cookie5 img{
+	width: 100%;
 }
 
 /* =================================== MEDIA QUERRY ================================================ */
 
 @media (max-width: 1170px){
-	
+	.menu-default{
+		min-width: 95vw;
+	}
 }
