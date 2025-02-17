@@ -57,6 +57,13 @@
 	width: 100%;
 }
 
+.barra-chocolate{
+	position: absolute;
+	left: -150px;
+	top: 1400px;
+	width: 350px;
+}
+
 /* =================================== MEDIA QUERRY ================================================ */
 
 @media (max-width: 1170px){
@@ -76,5 +83,11 @@
 	
 	.sobreBox p{
 		font-size: 1.1rem;
+	}
+
+	.barra-chocolate{
+		width: 300px;
+		top: 1600px;
+		left: -160px;
 	}
 }

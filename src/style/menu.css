@@ -108,12 +108,20 @@
 	background-size: cover;
 }
 
+.menu3-display{
+	margin-top: -150px;
+}
+
 .menu3 h2, .menu3 h3, .menu3 p{
 	color: var(--lightbrown);
+
 }
 
 .menu3 .cookie5{
-	display: none;
+	position: relative;
+	top: -150px;
+	right: -150px;
+	width: 80%;
 }
 
 .menu3 .cookie5 img{

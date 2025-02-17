@@ -16,6 +16,8 @@ body{ /* CORES */
 	--orange2: #FBA900;
 	--orange3: #FFD600;
 	--cream: #FFF5D3;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 @font-face {
